@@ -1,0 +1,200 @@
+html {
+    font-size: 0.9rem;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+.container {
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1,
+h2 {
+    font-weight: 300; 
+}
+
+h1 {
+    font-size: 3.75rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.75rem;
+    margin-top: 0;
+    border-top: solid 1px #c4c4c4;
+    border-bottom: solid 1px #c4c4c4;
+    
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.accent-text {
+    display: block;
+}
+
+h1 .accent-text {
+    font-size: 5rem;
+}
+
+h2 .accent-text {
+    font-size: 4rem;
+}
+
+.accent-text,
+.name,
+time {
+    font-weight: 900;
+    color: #99D930;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    color: #99D930;
+    font-weight: 900;
+}
+
+a:hover,
+a:focus {
+    color: #131313;
+}
+
+.small-text {
+    font-size: 1rem;
+    margin-top: 0.25em;
+} 
+
+header,
+section {
+    padding: 6em 0;
+}
+
+.inverse {
+    color: #fff;
+    background: #252525;
+}
+
+.inverse .btn:hover,
+.inverse .btn:focus {
+    background: #fff;
+    color: #252525;
+}
+
+.btn {
+    display: inline-block;
+    color: #252525;
+    text-decoration: none;
+    background: #99D930;
+    padding: 0.5em 1.5em;
+    margin-top: 1.5em;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #252525;
+    color: #fff;
+}
+
+@media (min-width: 600px){
+    html {
+        font-size: 1.3125rem;
+    }
+}
+
+@media (min-width: 750px) {
+    h2 {
+        border-color: #252525;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .col {
+        display: flex;
+    }
+
+    .about-me {
+        width: 50%;
+    }
+    
+    .articles {
+        width: 50%; 
+        background: #99D930;
+        color: #252525;    
+    }
+
+    .articles .accent-text,
+    .name,
+    a,
+    time {
+        color: #252525;
+    }   
+
+    .articles a:hover, 
+    a:focus {
+        color: white;
+    }
+
+    .inverse .btn {
+        color: white;
+        background: #252525;
+    }
+
+    .portfolio {
+        background: #252525;
+        color: white;
+        min-height: 100vh;
+        display: flex; 
+        align-items: center;
+    }
+
+    .portfolio img {
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+    }
+    .portfolio .container {
+        max-width: 1200px;
+    }
+
+    .portfolio-item {
+        width: 28%;
+    }
+    
+    .work {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .portfolio h2 {
+        border-color: white;
+    }
+}
